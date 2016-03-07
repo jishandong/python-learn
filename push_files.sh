@@ -9,7 +9,7 @@ echo "Usage:$0 file -m "tag""
 git add $2
 git commit -m $4
 git push origin master
-if $?==0 
+if [ $?==0 ] 
 then
 echo "done"
 else
